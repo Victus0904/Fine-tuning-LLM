@@ -1,6 +1,7 @@
 # Fine-tuning-LLM
 This repository contains code and experiments for fine-tuning a Large Language Model (LLM) using the **Cynaptics dataset**.  
 The training was implemented in Python using [Hugging Face Transformers](https://huggingface.co/transformers/) and PyTorch.
+Perplexity = 3.31
 
 ---
 
