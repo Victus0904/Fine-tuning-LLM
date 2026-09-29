@@ -1,29 +1,25 @@
-# Fine-tuning-LLM
-This repository contains code and experiments for fine-tuning a Large Language Model (LLM) using the **Cynaptics dataset**.  
-The training was implemented in Python using [Hugging Face Transformers](https://huggingface.co/transformers/) and PyTorch.
-Perplexity = 3.31
+# Fine-tuning Gemma 3 (270M)
 
----
+Supervised fine-tuning of Google's **`gemma-3-270m`** causal language model on the **Cynaptics** dataset,
+using Hugging Face Transformers and PyTorch.
 
-## 📌 Project Overview
-- Fine-tuned a pretrained LLM for domain-specific tasks.
-- Implemented with Hugging Face `Trainer` API.
-- Supports saving, reloading, and pushing models to the Hugging Face Hub.
+**Validation perplexity: 3.31**
 
----
+## Contents
 
-## 🚀 Getting Started
+| File | Purpose |
+|---|---|
+| `Finetune_Cynaptics.ipynb` | Data loading, tokenization, training with the HF `Trainer`, saving checkpoints |
+| `Eval.ipynb` | Evaluation and perplexity measurement |
+| `requirements.txt` | Dependencies |
 
-### 1. Clone the repo
+## Getting started
+
 ```bash
-git clone https://github.com/victus0904/Fine-tuning-LLM.git
+git clone https://github.com/Victus0904/Fine-tuning-LLM.git
 cd Fine-tuning-LLM
-```
-### 2. Install dependencies
-```
 pip install -r requirements.txt
-```
-### 3. Run training
-```
 jupyter notebook Finetune_Cynaptics.ipynb
 ```
+
+A GPU (e.g. Colab T4) is recommended.
