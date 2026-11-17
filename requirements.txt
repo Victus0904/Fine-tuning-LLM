@@ -1,6 +1,8 @@
-torch
-transformers
-datasets
-huggingface_hub
-accelerate
+torch>=2.1
+transformers>=4.50
+datasets>=2.18
+accelerate>=0.30
+huggingface_hub>=0.23
+numpy>=1.24
+tqdm>=4.66
 jupyter
